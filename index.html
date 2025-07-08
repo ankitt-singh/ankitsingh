@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankit Kumar Singh | Coming Soon</title>
+  <style>
+    :root {
+      --primary: #00c2ff;
+      --dark-bg: #0f0f0f;
+      --light-text: #f0f0f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--light-text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #aaa;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #fff;
+    }
+
+    .email {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    .email a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .email a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // Optional typing effect for h2
+    document.addEventListener('DOMContentLoaded', () => {
+      const target = document.querySelector('.typed');
+      const text = "Full-Stack Developer | JavaScript Enthusiast";
+      let index = 0;
+
+      function type() {
+        if (index < text.length) {
+          target.textContent += text[index++];
+          setTimeout(type, 70);
+        }
+      }
+
+      type();
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>👋 Hey, I'm Ankit</h1>
+    <h2 class="typed"></h2>
+    <p>My portfolio is under construction. Something awesome is on the way.<br />Stay connected!</p>
+
+    <div class="socials">
+      <a href="https://github.com/ankitt-singh" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ankitsingh3/" target="_blank">LinkedIn</a>
+      <a href="mailto:ankitt.kr.singhh@gmail.com" target="_blank">Email</a>
+    </div>
+
+    <div class="email">
+      Want to connect? <a href="mailto:ankitt.kr.singhh@gmail.com">ankitt.kr.singhh@gmail.com</a>
+    </div>
+  </div>
+</body>
+</html>
